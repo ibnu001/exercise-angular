@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'challenge';
+
+  account = {
+    email: '',
+    password: '',
+    isLogin: false
+  }
+
+  handleLoginEvent(event: any) {
+    this.account = event
+    console.log(this.account)
+  }
+
+
 }

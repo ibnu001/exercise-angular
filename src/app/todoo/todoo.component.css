@@ -6,22 +6,25 @@
   white-space: pre-wrap;
 }
 
-.btn-tambah {
-  --bs-btn-color: #A1CCD1; /* Warna teks */
+.btn-custom {
+  --bs-btn-color: #3e6288; /* Warna teks */
   --bs-btn-bg: #fff; /* Warna latar belakang utama */
-  --bs-btn-border-color: #A1CCD1; /* Warna border */
+  --bs-btn-border-color: #fff; /* Warna border */
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c9ca4; /* Warna latar belakang saat di hover */
-  --bs-btn-hover-border-color: #A1CCD1; /* Warna border saat di hover */
-  --bs-btn-focus-shadow-rgb: 161, 204, 209; /* Warna shadow saat focus */
+  --bs-btn-hover-bg: #808080FF; /* Warna latar belakang saat di hover */
+  --bs-btn-hover-border-color: #808080FF; /* Warna border saat di hover */
+  --bs-btn-focus-shadow-rgb: 62, 98, 136; /* Warna shadow saat focus */
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #84B7C2; /* Warna latar belakang saat ditekan */
-  --bs-btn-active-border-color: #7DAEB9; /* Warna border saat ditekan */
+  --bs-btn-active-bg: #808080FF; /* Warna latar belakang saat ditekan */
+  --bs-btn-active-border-color: #808080FF; /* Warna border saat ditekan */
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #A1CCD1; /* Warna teks saat disabled */
+  --bs-btn-disabled-color: #808080FF; /* Warna teks saat disabled */
   --bs-btn-disabled-bg: #F6F4EB; /* Warna latar belakang saat disabled */
-  --bs-btn-disabled-border-color: #A1CCD1; /* Warna border saat disabled */
+  --bs-btn-disabled-border-color: #808080FF; /* Warna border saat disabled */
 }
+
+
+
 
 
 

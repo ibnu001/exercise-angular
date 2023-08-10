@@ -1,18 +1,35 @@
-<div class="bg-white my-5 p-lg-5 d-flex align-items-center justify-content-center bg-dark">
+<div class="bg-white p-lg-5 d-flex align-items-center justify-content-center"
+     style="background-image: url('./assets/images/astronout.jpg'); background-size: cover; background-position: center;">
 
-  <div class="card p-4" style="background-color: #A1CCD1; width: 50rem; border-radius: 1rem">
+  <div class="card p-4" style="background-color: #3e6288; width: 50rem; border-radius: 1rem">
 
     <img [src]="imageSrc" [alt]="imageAlt" class="mx-auto d-block" style="width: 45rem; border-radius: 1rem">
 
-    <h1 class="mt-5" style="text-align: center; color: white; font-family: 'Consolas',cursive; font-weight: bold">Todo
-      Meow ≽^•⩊•^≼</h1>
+    <div class="d-flex flex-row m-3">
+
+      <div class="flex-grow-1 p-1">
+        <h4 class="mb-0 align-content-center" style="color: white; font-family: 'Consolas',cursive; font-weight: bold"
+        >Account : {{account.email}}</h4>
+      </div>
+
+      <button type="button" (click)="logout()" class="btn btn-custom px-5 border align-self-start"
+              style="width: fit-content; font-weight: bold"
+      >Logout
+      </button>
+
+
+    </div>
+
+    <h1 class="mt-5" style="text-align: center; color: white; font-family: 'Consolas',cursive; font-weight: bold"
+    >Todo Meow ≽^•⩊•^≼</h1>
 
     <div class="d-flex flex-column mt-3">
       <input type="text" id="todo" placeholder="Todo" class="form-control" (input)="onTodo($event)"/>
       <input type="text" id="description" placeholder="Description" class="mt-4 form-control"
              (input)="onDescription($event)"/>
 
-      <button type="button" (click)="tambah()" class="btn btn-tambah mt-4 px-5 border align-self-start" style="width: fit-content; font-weight: bold">
+      <button type="button" (click)="tambah()" class="btn btn-custom mt-4 px-5 border align-self-start"
+              style="width: fit-content; font-weight: bold">
         Tambah
       </button>
     </div>
@@ -36,7 +53,8 @@
         <td class="desc-todo" [class.done]="itemTodo.isDone">{{itemTodo.desc}}</td>
         <td class="text-center">
           <div class="btn-group">
-            <button type="button" (click)="isDone(i)" class="btn btn-outline-warning" style="width: 5rem">{{itemTodo.doneLabel}}</button>
+            <button type="button" (click)="isDone(i)" class="btn btn-outline-warning"
+                    style="width: 5rem">{{itemTodo.doneLabel}}</button>
             <button type="button" (click)="delete(i)" class="btn btn-outline-danger" style="width: 5rem">Delete</button>
           </div>
         </td>

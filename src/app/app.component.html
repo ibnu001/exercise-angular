@@ -1,2 +1,8 @@
-<app-todoo></app-todoo>
+<div *ngIf="!account.isLogin; else todo_content">
+  <app-login (loginEvent)="handleLoginEvent($event)"></app-login>
+</div>
+
+<ng-template #todo_content>
+  <app-todoo [account]="account"></app-todoo>
+</ng-template>
 
