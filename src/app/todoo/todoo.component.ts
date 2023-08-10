@@ -13,7 +13,7 @@ export class TodooComponent {
   description: string = ''
   todoList: { todo: string, desc: string, isDone: boolean, doneLabel: string }[] = []
 
-  done: string = 'Done'
+  // done: string = 'Done'
 
   onTodo(evTodo: any): void {
     this.todo = evTodo.target.value
