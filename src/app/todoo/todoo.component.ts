@@ -44,6 +44,7 @@ export class TodooComponent {
     console.log(this.todoList)
   }
 
+
   isDone(i: number) {
     const todoItem = this.todoList[i]
     todoItem.isDone = !todoItem.isDone
